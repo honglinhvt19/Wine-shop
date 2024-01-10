@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ba57bb7e9.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"  src="/jquery/jquery-3.7.1.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/pic/Logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+              <a href="Index.html"><img src="/pic/Logo.png"></a>
+            </div>
+            <div class="search_box">
+                <input type="text" class="search_bar" placeholder="Search...">
+                <button><i class="fa-solid fa-magnifying-glass" style="color: #970dca;"></i></button>
+            </div>               
+                <div class="icon-cart">
+                  <img src="pic/cart.jpg">
+                  <span class="quantity">0</span>
+                </div>
+         </div>
+         <nav class="luxury-nav">      
+          <ul class="menu">
+            <li><a href="Index.html">Home</a></li> 
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="product">
+      <div class="side-list">
+        <ul>
+            <a href="champagne.html"><li>Champagne</li></a>
+            <a href="redwine.html"><li>Red Wine</li></a>
+            <a href="whitewine.html"><li>White Wine</li></a>
+            <a href="rosewine.html"><li>Rosé Wine</li></a>
+        </ul>
+      </div>
+      <div class="product-form">
+        <div class="type">
+            <pre>RED WINE</pre>
+            <hr>
+        </div>
+          <div class="listProduct">
+
+          </div>
+          
+          <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <div class="listCart">
+                
+            </div>
+            <div class="btn">
+                <button class="close">CLOSE</button>
+                <a href="Checkout.html"><button class="checkOut">Check Out</button></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="information">
+          <h2>INFORMATION</h2>
+          <hr>
+          <h1>WINE SHOP</h3>
+          <span>
+            <i class="fa-solid fa-phone"></i>
+            <a href="#">0388349948</a>
+          </span>
+          <span>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="#">honglinhcoms@gmail.com</a>
+          </span>
+          <span>
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="#">97 Võ Văn Tần, Quận 3, Thành Phố Hồ Chí Minh</a>
+          </span>
+        </div>
+        <div class="about">
+          <h2>ABOUT US</h2>
+          <hr>
+          <a href="#">Product</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="contact">
+          <h2>FOLLOW US</h2>
+          <hr>
+          <span>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+          </span>
+        </div>
+      </footer>
+
+      <script src="app.js"></script>
+
+      <script>
+        const initApp = () => {
+          // get data product
+          fetch('redwine.json')
+          .then(response => response.json())
+          .then(data => {
+              products = data;
+              addDataToHTML();
+      
+              // get data cart from memory
+              if(localStorage.getItem('cart')){
+                  cart = JSON.parse(localStorage.getItem('cart'));
+                  addCartToHTML();
+              }
+          })
+      }
+      initApp();
+      </script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wine Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6ba57bb7e9.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"  src="/jquery/jquery-3.7.1.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="/pic/Logo.png">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                  <a href="Index.html"><img src="/pic/Logo.png"></a>
+                </div>
+                <div class="search_box">
+                    <input type="text" class="search_bar" placeholder="Search...">
+                    <button><i class="fa-solid fa-magnifying-glass" style="color: #970dca;"></i></button>
+                </div>
+                <div class="icon-cart">
+                  <img src="pic/cart.jpg">
+                  <span class="quantity">0</span>
+                </div>
+             </div>
+             <nav class="luxury-nav">      
+              <ul class="menu">
+                <li><a href="Index.html">Home</a></li> 
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <div class="checkout-container">
+            <div class="checkout row">
+                <div class="checkout-content checkout-left-content col-lg-7 ">
+                    <div class="checkout-header">
+                        <h2 class="checkout-title">Delivery Information</h2>
+                    </div>
+
+                        <div class="fieldset">
+                            <div class="field-wrap col-12 px-0">
+                                <!-- The input -->
+                                <input class="field-input w-100" type="text" placeholder="Name" id="name"
+                                    name="name" />
+    
+                                <!-- The label -->
+                                <label class="field-label" for="name">Name</label>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="field-wrap col-md-8 px-0">
+                                        <!-- The input -->
+                                        <input class="field-input w-100" type="email" placeholder="Email" id="email"
+                                            name="email" />
+    
+                                        <!-- The label -->
+                                        <label class="field-label" for="email">Email</label>
+                                    </div>
+    
+                                    <div class="field-wrap col-md-4 pr-0">
+                                        <!-- The input -->
+                                        <input class="field-input w-100" type="tel" maxlength="11"
+                                            placeholder="Phone" id="phone" name="phone" />
+    
+                                        <!-- The label -->
+                                        <label class="field-label" for="phone">Phone</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-wrap col-12 px-0">
+                                <!-- The input -->
+                                <input class="field-input w-100" type="text" placeholder="Address" id="address"
+                                    name="address" />
+    
+                                <!-- The label -->
+                                <label class="field-label" for="address">Address</label>
+                            </div>
+    
+                            <div class="container">
+                                <div class="row">
+                                    <div class="field-wrap field-select-wrap col-md-4 px-0">
+                                        <!-- The input -->
+                                        <select class="field-select w-100" id="province" name="province">
+                                            <option value="null">Province</option>
+                                        </select>
+    
+                                        <!-- The label -->
+                                        <label class="field-label" for="province">Province</label>
+                                    </div>
+    
+                                    <div class="field-wrap field-select-wrap col-md-4 pr-0">
+                                        <!-- The input -->
+                                        <select class="field-select w-100" id="district" name="district">
+                                            <option value="null">District</option>
+                                        </select>
+    
+                                        <!-- The label -->
+                                        <label class="field-label" for="district">District</label>
+                                    </div>
+    
+                                    <div class="field-wrap field-select-wrap col-md-4 pr-0">
+                                        <!-- The input -->
+                                        <select class="field-select w-100" id="ward" name="ward">
+                                            <option value="null">Ward</option>
+                                        </select>
+    
+                                        <!-- The label -->
+                                        <label class="field-label" for="ward">Phường / xã</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="shipping-method checkout-section">
+                        <div class="checkout-header">
+                            <h2 class="checkout-title">Shipping Method</h2>
+                        </div>
+                        <div class="shipping-method-content">
+                            <div class="content-box  blank-slate">
+                                <img src="/pic/ship-icon.jpg" alt="">
+                                <p class="mt-0">Please select a district to get a list of shipping methods.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="payment-method">
+                        <div class="checkout-header">
+                            <h2 class="checkout-title">Payment Methods</h2>
+                        </div>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                        <input type="radio" id="payment-method1" name="payment-method"
+                                            class="custom-control-input" checked="checked">
+                                        <label class="custom-control-label" for="payment-method1">Cash</label>
+                                    </div>
+                                </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                        <input type="radio" id="payment-method2" name="payment-method"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="payment-method2">Momo Wallet</label>
+                                    </div>                               
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                        <input type="radio" id="payment-method3" name="payment-method"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="payment-method3">
+                                            ATM/Visa/Master/JCB</label>
+                                </div>
+                            </div>
+                    </div>
+    
+                    <div class="checkout-footer d-flex align-items-center justify-content-between">
+                        <a class="previous-link" href=""><i class="fas fa-chevron-left mr-2"></i>Cart</a>
+                        <a href="Checkout.html"><button name="button" type="submit" class="continue-btn btn">Order</button></a>
+                    </div>
+                
+                </div>
+                <div class="checkout-content checkout-right-content col-lg-5">
+                    <div class="order-section">
+                        <div class="order-prd-list order-content">
+                            <table class="product-table">
+                                <!-- <thead>
+                                    <tr>
+                                        <th scope="col"><span class="visually-hidden">Hình ảnh</span></th>
+                                        <th scope="col"><span class="visually-hidden">Mô tả</span></th>
+                                        <th scope="col"><span class="visually-hidden">Số lượng</span></th>
+                                        <th scope="col"><span class="visually-hidden">Giá</span></th>
+                                    </tr>
+                                </thead> -->
+                                <tbody>
+                                    <tr class="order-product">
+                                        <td class="product-image">
+                                            <div class="product-thumbnail">
+                                                <div class="product-thumbnail-wrapper">
+                                                    <img class="product-thumbnail-image" src="/champagne/1.jpg">
+                                                </div>
+                                                <span class="product-thumbnail-quantity">1</span>
+                                            </div>
+                                        </td>
+                                        <td class="product-infor">
+                                            <p class="product-name order-prd-list-txt">Champagne Fleur de Miraval Exclusivement Rose 3</p>  
+                                        </td>
+                                        <td class="product-price">
+                                            <span class="order-prd-list-txt">$200</span>
+                                        </td>
+                                    </tr>
+    
+                                </tbody>
+                            </table>
+                        </div>
+    
+                        <div class="order-discount order-content">
+                            <div class="fieldset">
+                                <div class="field-wrap discount-content d-flex justify-content-between align-items-center">
+                                    <div class="discount-input-wrap">
+                                        <input placeholder="Voucher" class="field-input" autocomplete="off"
+                                            autocapitalize="off" spellcheck="false" size="30" type="text" id="discount"
+                                            name="discount" value="">
+                                        <label class="field-label" for="discount">Discount</label>
+                                    </div>
+                                    <button type="submit" class="discount-btn btn btn-default">
+                                        <span class="btn-content">Apply</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="order-total order-content">
+                            <table class="total-table w-100">
+                                <tbody>
+                                    <tr class="total total-subtotal">
+                                        <td class="total-name">Merchandise Subtotal</td>
+                                        <td class="total-price">
+                                            <span class="order-summary-emphasis">
+                                                $200
+                                            </span>
+                                        </td>
+                                    </tr>
+    
+                                    <tr class="total total-shipping">
+                                        <td class="total-name">Shipping Total</td>
+                                        <td class="total-price">
+                                            <span class="order-summary-emphasis">—</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="total total-shipping">
+                                        <td class="total-name">Discount</td>
+                                        <td class="total-price">
+                                            <span class="order-summary-emphasis">—</span>
+                                        </td>
+    
+                                </tbody>
+                                <tfoot class="total-table-footer">
+                                    <tr class="total">
+                                        <td class="total-name payment-due-label">
+                                            <span class="payment-due-label-total">Total Payment</span>
+                                        </td>
+                                        <td class="total-name payment-due">
+                                            <span class="payment-due-currency">$</span>
+                                            <span class="payment-due-price">
+                                                200
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="information">
+              <h2>INFORMATION</h2>
+              <hr>
+              <h1>WINE SHOP</h3>
+              <span>
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">0388349948</a>
+              </span>
+              <span>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#">honglinhcoms@gmail.com</a>
+              </span>
+              <span>
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">97 Võ Văn Tần, Quận 3, Thành Phố Hồ Chí Minh</a>
+              </span>
+            </div>
+            <div class="about">
+              <h2>ABOUT US</h2>
+              <hr>
+              <a href="#">Product</a>
+              <a href="#">Services</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="contact">
+              <h2>FOLLOW US</h2>
+              <hr>
+              <span>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+              </span>
+            </div>
+          </footer>
+
+          <script src="app.js"></script>
+    </body>
+</html>

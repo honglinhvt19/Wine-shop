@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name":" Flor de Muga Rosé",
+        "price": 200,
+        "image": "rosewine/1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Leos Cuvée Augusta Rosé",
+        "price": 250,
+        "image": "rosewine/2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Muga Rosé Rioja",
+        "price": 290,
+        "image": "rosewine/3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Roselito Ribera Del Duero",
+        "price": 200,
+        "image": "rosewine/4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" H&B Côtes De Provence Rose 2020",
+        "price": 300,
+        "image": "rosewine/5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Artadi Artazuri Garnacha",
+        "price": 200,
+        "image": "rosewine/6.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Crawford Hawke’s Bay Rosé",
+        "price": 200,
+        "image": "rosewine/7.jpg"
+    },
+    {
+        "id": 8,
+        "name":" Mr Klups Rosé Vino Spumante",
+        "price": 200,
+        "image": "rosewine/8.jpg"
+    },
+    {
+        "id": 9,
+        "name":" Premius Bordeaux Rosé 2022",
+        "price": 200,
+        "image": "rosewine/9.jpg"
+    }
+
+]

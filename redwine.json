@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name":" Collefrisio In&Out 2018",
+        "price": 200,
+        "image": "redwine/1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Domaine Armand Rousseau Chambertin Grand Cru 2012",
+        "price": 250,
+        "image": "redwine/2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Armand Rousseau Gevrey Chambertin Grand Cru 2019",
+        "price": 290,
+        "image": "redwine/3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Domaine De Pallus Cabernet Franc",
+        "price": 200,
+        "image": "redwine/4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Les Pélerins De Lafon-Rochet 2019",
+        "price": 300,
+        "image": "redwine/5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Domaine Dujac Morey-Saint-Denis 2018",
+        "price": 200,
+        "image": "redwine/6.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Antídoto Ribera Del Duero",
+        "price": 200,
+        "image": "redwine/7.jpg"
+    },
+    {
+        "id": 8,
+        "name":" La Hormiga De Antídoto 2021",
+        "price": 200,
+        "image": "redwine/8.jpg"
+    },
+    {
+        "id": 9,
+        "name":" CF Ten Vintages 2017",
+        "price": 200,
+        "image": "redwine/9.jpg"
+    }
+
+]

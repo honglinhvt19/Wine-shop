@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name":" Champagne Fleur de Miraval Exclusivement Rose 3",
+        "price": 200,
+        "image": "champagne/1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Combo Champagne Billecart-Salmon",
+        "price": 250,
+        "image": "champagne/2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Champagne Billecart-Salmon Cuvée Nicolas Francois Brut 2008",
+        "price": 290,
+        "image": "champagne/3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Champagne Alfred Gratien Blanc de Blancs 2015",
+        "price": 200,
+        "image": "champagne/4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Champagne Alfred Gratien Brut",
+        "price": 300,
+        "image": "champagne/5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Champagne Alfred Gratien Brut Millesime 1996",
+        "price": 200,
+        "image": "champagne/6.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Champagne Alfred Gratien Brut Millesime 1997",
+        "price": 200,
+        "image": "champagne/7.jpg"
+    },
+    {
+        "id": 8,
+        "name":" Champagne Alfred Gratien Brut Millesime 1998",
+        "price": 200,
+        "image": "champagne/8.jpg"
+    },
+    {
+        "id": 9,
+        "name":" Champagne Alfred Gratien Brut Millesime 2015",
+        "price": 200,
+        "image": "champagne/9.jpg"
+    }
+
+]
